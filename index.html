@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div id="load-area">
+            <div class="image"></div>
+            <div id="load-bar">
+                <div class="line-load-bar"></div>
+                <div class="line-load-bar"></div>
+                <div class="line-load-bar"></div>
+                <div class="line-load-bar"></div>
+                <div class="line-load-bar"></div>
+                <div class="line-load-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById("loading-screen").style.animation = "2s open 1";
+        });
+    </script>
+</body>
+</html>
